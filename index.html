@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Database - Electronic Warfare Coy</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<div class="form-container">
+    <div class="header">
+        <div class="header-text">
+            <h1>Personal Database</h1>
+            <h2>Electronic Warfare Company </h2>
+        </div>
+        <a href="https://script.google.com/macros/s/AKfycbwhfHnRJIZFayr36ut1WJ6dUwklZEJFrlw9ynODwGtCHjSI7CS_0YmwLLch--ViCA2a/exec" target="_blank" class="db-ready-btn">
+            database Ready
+        </a>
+
+    </div>
+
+    <!-- ফর্মের মূল অংশ -->
+    <form id="databaseForm">
+        <div class="grid-layout">
+            
+            <!-- বাম পাশের কলাম -->
+            <div class="left-column">
+                <div class="form-group">
+                    <label>ID</label>
+                    <input type="text" name="ID" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Army No</label>
+                    <input type="text" name="ArmyNo" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Rank</label>
+                    <select name="Rank">
+                        <option value="Swo">Swo</option>
+                        <option value="Wo">Wo</option>
+                        <option value="Sgt">Sgt</option>
+                        <option value="Cpl">Cpl</option>
+                        <option value="Lcpl">Lcpl</option>
+                        <option value="Snk">Snk</option>
+                        <option value="NC(E)">NC(E)</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Trade</label>
+                    <select name="Trade">
+                        <option value="FofS">FofS</option>
+                        <option value="YOFS">YOFS</option>
+                        <option value="OP">OP</option>
+                        <option value="Tech">Tech</option>
+                        <option value="Tech">Dvr</option>
+                        <option value="Tech">Clk</option>
+                        <option value="Tech">ws</option>
+                        <option value="Tech">cook</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Join date of coy</label>
+                    <input type="date" name="JoinDateCoy">
+                </div>
+
+                <div class="form-group">
+                    <label>Join date of Army</label>
+                    <input type="date" name="JoinDateArmy">
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" name="DOB">
+                </div>
+
+                <div class="form-group">
+                    <label>Last promotion date</label>
+                    <input type="date" name="PromoDate">
+                </div>
+
+                <div class="form-group">
+                    <label>District</label>
+                    <input type="text" name="District">
+                </div>
+
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea name="Address"></textarea>
+                </div>
+            </div>
+
+            <!-- ডান পাশের কলাম -->
+            <div class="right-column">
+                <div class="form-group">
+                    <label>IPFT</label>
+                    <select name="IPFT">
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Speed murch</label>
+                    <input type="text" name="SpeedMurch" value="2">
+                </div>
+                 <div class="form-group">
+                    <label>Assult course</label>
+                    <input type="text" name="AssultC" value="">
+                </div>
+
+                <div class="form-group">
+                    <label>Fire</label>
+                    <select name="Fire">
+                        <option value="Pass">Pass</option>
+                        <option value="Fail">Fail</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>P/LVE</label>
+                    <input type="text" name="PLve">
+                </div>
+                <div class="form-group">
+                    <label>C/LVE</label>
+                    <input type="text" name="CLve">
+                </div>
+                <div class="form-group">
+                    <label>M+R/LVE</label>
+                    <input type="text" name="MLve">
+                </div>
+                <div class="form-group">
+                    <label>W/LVE</label>
+                    <input type="text" name="WLve">
+                </div>
+                <div class="form-group">
+                    <label>Mobile num</label>
+                    <input type="text" name="familyN">
+                </div>
+                <div class="form-group">
+                    <label>Ineligible</label>
+                    <input type="text" name="Ineligible">
+                </div>
+                <div class="form-group">
+                    <label>Spouse mob no</label>
+                    <input type="text" name="Spouse">
+                </div>
+                <div class="form-group">
+                    <label>Children</label>
+                    <input type="text" name="Children">
+                </div>
+                 <div class="form-group">
+                    <label>Blood gp</label>
+                    <input type="text" name="Blood">
+                </div>
+                <div class="form-group">
+                    <label>Family detail</label>
+                    <textarea name="Familyd"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- বাটন গ্রুপ -->
+        <div class="button-group">
+            <button type="submit" class="btn">Submit</button>
+            <button type="reset" class="btn" style="background: #555; border-color: #666;">Reset</button>
+        </div>
+
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
